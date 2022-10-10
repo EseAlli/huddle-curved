@@ -106,6 +106,7 @@ header a {
 
 .mockups img {
   max-width: 100%;
+  width: -webkit-fill-available;
 }
 
 .stats {
@@ -350,6 +351,18 @@ ul {
 }
 
 @media (min-width: 600px) {
+  nav {
+    margin: 0.5rem 0;
+  }
+
+  nav img {
+    width: 200px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
   header a {
     margin: 0.75rem 0;
   }
@@ -363,6 +376,10 @@ ul {
     gap: 0;
     justify-content: space-around;
     margin: 2rem;
+  }
+
+  .stats h2 {
+    font-size: 4.5rem;
   }
 
   .stats div:nth-of-type(2) p {
