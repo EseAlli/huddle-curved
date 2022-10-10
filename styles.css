@@ -33,14 +33,13 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
-  color: var(--dark-cyan);
 }
 
-h3 {
+main h3 {
   margin: 1rem 0;
 }
 
-p {
+main p {
   color: var(--dark-cyan);
   width: 90%;
   margin: auto;
@@ -79,6 +78,10 @@ header h1 {
   width: 80%;
   margin: auto;
   font-weight: 700;
+}
+
+header p {
+  max-width: 500px;
 }
 
 header a {
@@ -148,9 +151,20 @@ header a {
   padding: 6.25rem 0 3rem 0;
 }
 
-.grow div {
+.grow .content {
   background-color: var(--pale-blue);
+}
+
+.content {
   padding: 4rem 0;
+}
+
+.content img {
+  order: 1;
+}
+
+.content div {
+  order: 2;
 }
 
 .users {
@@ -183,7 +197,8 @@ header a {
 .users img,
 .grow img,
 .conversations img {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   margin-bottom: 4.5rem;
 }
 
@@ -214,6 +229,7 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 2rem 0;
+  order: 1;
 }
 
 .newsletter h3 {
@@ -224,10 +240,17 @@ ul {
 .newsletter p {
   line-height: 1.5rem;
   font-weight: 600;
+  max-width: 400px;
+}
+
+.newsletter div {
+  display: flex;
+  flex-direction: column;
+  margin: 1.75rem 0 0 0;
+  gap: 0.75rem;
 }
 
 .newsletter input {
-  margin: 1.75rem 0 0.75rem 0;
   border-radius: 8px;
   padding: 1rem;
 }
@@ -242,12 +265,11 @@ ul {
   border: none;
   font-weight: 700;
   font-size: 1rem;
+  max-width: 200px;
 }
 
 .contact-info {
-  /* padding: 1.5rem; */
-  /* order: 2 */
-
+  order: 2;
   margin-top: 1rem;
 }
 
@@ -255,10 +277,12 @@ ul {
   width: 60%;
   margin: 0.25rem 0;
   vertical-align: middle;
+  max-width: 200px;
 }
 
 .contact-info p {
   margin: 1rem 0;
+  max-width: 300px;
 }
 
 .logo {
@@ -293,5 +317,135 @@ ul {
 }
 
 @media (min-width: 375px) {
-    
+  .grow {
+    background: url(./images/bg-section-top-desktop-1.svg) top left no-repeat,
+      url(./images/bg-section-bottom-desktop-1.svg) bottom left no-repeat;
+  }
+  .users {
+    background: url(./images/bg-section-top-desktop-2.svg) top left no-repeat,
+      url(./images/bg-section-bottom-desktop-2.svg) bottom left no-repeat;
+  }
+
+  .grow,
+  .users {
+    padding: 8.25rem 0;
+  }
+
+  .content {
+    padding: 5rem;
+  }
+
+  footer {
+    background-image: url(./images/bg-footer-top-desktop.svg);
+    padding-top: 9.25rem;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  header a {
+    margin: 0.75rem 0;
+  }
+
+  main section {
+    padding: 3rem 0;
+  }
+
+  .stats {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+
+  .stats div:nth-of-type(2) p {
+    width: 100%;
+  }
+
+  .grow,
+  .users {
+    padding: 8.25rem 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .grow .content img,
+  .users .content img {
+    order: 2;
+  }
+
+  .content div {
+    order: 1;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .content h3 {
+    margin: 1.25rem auto;
+    width: 90%;
+    font-size: 1.75rem;
+  }
+  .content p {
+    max-width: 500px;
+  }
+
+  .community {
+    gap: 0.75 rem;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 1.75rem;
+  }
+
+  .newsletter {
+    order: 2;
+    width: auto;
+  }
+
+  .newsletter div {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .newsletter input {
+    max-width: 350px;
+    width: 75%;
+  }
+
+  .newsletter button {
+    align-self: center;
+  }
+
+  .contact-info {
+    order: 1;
+    width: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .community img,
+  .users img,
+  .grow img,
+  .conversations img {
+    max-width: 500px;
+  }
 }
