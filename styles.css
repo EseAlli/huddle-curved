@@ -36,8 +36,53 @@ h3 {
   color: var(--dark-cyan);
 }
 
+h3 {
+  margin: 1rem 0;
+}
+
 p {
   color: var(--dark-cyan);
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.75rem;
+}
+
+nav img {
+  width: 120px;
+  object-fit: contain;
+}
+
+nav a {
+  border: 1px solid var(--secondary-pink);
+  color: var(--secondary-pink);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 6rem 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto;
+  font-weight: 700;
+}
+
+header a {
+  margin: 2rem auto;
 }
 
 .btn {
@@ -48,6 +93,64 @@ p {
   display: inline-block;
   text-align: center;
   border-radius: 25px;
+  max-width: 250px;
+}
+
+.mockups {
+  width: 85%;
+  margin: 0 auto 6rem auto;
+}
+
+.mockups img {
+  max-width: 100%;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  padding: 0rem 0;
+  margin-top: 2rem;
+}
+
+.stats img {
+  width: 24px;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stats h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.stats p {
+  width: 100%;
+}
+
+.stats div:nth-of-type(2) p {
+  width: 50%;
+}
+
+.grow {
+  background: url(./images/bg-section-top-mobile-1.svg) top left no-repeat,
+    url(./images/bg-section-bottom-mobile-1.svg) bottom left no-repeat;
+}
+
+.grow,
+.users {
+  padding: 6.25rem 0 3rem 0;
+}
+
+.grow div {
+  background-color: var(--pale-blue);
+  padding: 4rem 0;
 }
 
 .users {
@@ -59,15 +162,6 @@ p {
 .users div {
   background-color: var(--pale-blue);
   padding: 4rem 0 7rem 0;
-}
-
-.users img {
-  width: 300px;
-  margin-bottom: 4.5rem;
-}
-
-.users h3 {
-  margin: 1rem 0;
 }
 
 .users p {
@@ -83,6 +177,14 @@ p {
 
 .community h3 {
   font-size: 1.75rem;
+}
+
+.community img,
+.users img,
+.grow img,
+.conversations img {
+  width: 300px;
+  margin-bottom: 4.5rem;
 }
 
 footer {
@@ -188,4 +290,8 @@ ul {
   margin-top: 1.5rem;
   gap: 1rem;
   align-items: center;
+}
+
+@media (min-width: 375px) {
+    
 }
