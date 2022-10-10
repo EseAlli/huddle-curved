@@ -16,14 +16,78 @@
 
 body {
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--dark-cyan);
+  padding: 10rem 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-cyan);
+}
+
+p {
+  color: var(--dark-cyan);
+}
+
+.btn {
+  background-color: var(--primary-pink);
+  color: white;
+  padding: 0.75rem 0;
+  inline-size: 60%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.users {
+  background: url(./images/bg-section-top-mobile-2.svg) top left no-repeat,
+    url(./images/bg-section-bottom-mobile-2.svg) bottom left no-repeat;
+  padding: 6.25rem 0;
+}
+
+.users div {
+  background-color: var(--pale-blue);
+  padding: 4rem 0 7rem 0;
+}
+
+.users img {
+  width: 300px;
+  margin-bottom: 4.5rem;
+}
+
+.users h3 {
+  margin: 1rem 0;
+}
+
+.users p {
+  margin: auto;
+  width: 90%;
+}
+
+.community {
+  background-color: white;
+  gap: 2.5rem;
+  padding-bottom: 15rem;
+}
+
+.community h3 {
+  font-size: 1.75rem;
 }
 
 footer {
   color: var(--pale-blue);
   padding-top: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.75rem;
   background-image: url(./images/bg-footer-top-mobile.svg);
   background-position: top left;
   background-repeat: no-repeat;
@@ -34,6 +98,10 @@ footer {
   background-color: var(--dark-cyan);
   width: 100%;
   padding: 2.7rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  align-items: center;
 }
 
 ul {
