@@ -460,11 +460,11 @@ ul {
 
 @media (min-width: 1280px) {
   nav {
-    margin: 5.25rem 4rem;
+    margin: 5.25rem 3.25rem;
   }
 
   nav img {
-    width: 250px;
+    width: 200px;
   }
 
   header h1 {
