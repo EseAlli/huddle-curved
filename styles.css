@@ -278,6 +278,11 @@ ul {
   max-width: 200px;
 }
 
+.newsletter button:hover {
+  background-color: hsla(321, 200%, 78%, 0.8);
+  cursor: pointer;
+}
+
 .contact-info {
   order: 2;
   margin-top: 1rem;
@@ -515,6 +520,10 @@ ul {
     max-width: 500px;
   }
 
+  .community h3 {
+    font-size: 2rem;
+  }
+
   .content h3 {
     font-size: 2.5rem;
     width: 100%;
@@ -522,5 +531,9 @@ ul {
 
   .users p {
     width: 100%;
+  }
+
+  .newsletter div {
+    gap: 2rem;
   }
 }
