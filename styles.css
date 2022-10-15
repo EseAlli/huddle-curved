@@ -355,6 +355,10 @@ ul {
   align-items: center;
 }
 
+.socials li:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 375px) {
   .grow {
     background: url(./images/bg-section-top-desktop-1.svg) top left no-repeat,
