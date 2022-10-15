@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/EseAlli/huddle-curved](https://github.com/EseAlli/huddle-curved)
-- Live Site URL: [https://esealli.github.io/frontend-playground/ping-coming-soon-page/](https://esealli.github.io/frontend-playground/ping-coming-soon-page)
+- Live Site URL: [https://esealli.github.io/huddle-curved/](https://esealli.github.io/huddle-curved)
 
 ## My process
 
